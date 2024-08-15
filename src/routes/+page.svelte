@@ -1,11 +1,13 @@
 <script lang="ts">
-
+    export let title = "Welcome to my portfolio";
 </script>
 
-<h2>This is the landing page</h2>
+<main>
+    <h1>{title}</h1>
+    <p>Hi, I'm Evan Maier, an Electrical Engineer and Software Developer. Welcome to my portfolio!</p>
+    <!-- Add hero section, introduction, etc. -->
+</main>
 
 <a href="/about">about</a>
-
 <a href="/projects">projects</a>
-
-<a href="/work">work</a>
+<a href="/contact">contact</a>
