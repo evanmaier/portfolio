@@ -9,5 +9,5 @@
 </main>
 
 <a href="/about">about</a>
-<a href="/projects">projects</a>
+<a href="/experience">experience</a>
 <a href="/contact">contact</a>
