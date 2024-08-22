@@ -1,83 +1,55 @@
 <script>
-  let title = "Professional Experience";
-  let firstProject = "ORCASat";
-  let secondProject = "Open Ocean Robotics";
+  let battlesnake = "src/lib/assets/battlesnake.gif";
+  let orcasat = "src/lib/assets/ORCASat-partial-1.jpg";
+  let openocean = "src/lib/assets/openocean.webp";
 </script>
-  
-  <main>
-    <h1>{title}</h1>
-    <section>
-      <article>
-        <h2>{firstProject}</h2>
-        <p>
-          ORCASAT is a cube satellite designed to calibrate telescopes
-          for atmospheric interferance. My main role was firmware 
-          development for the Telemetry, Tracking, and Command team. 
-          Aditionally I worked with the Command and Data Handling team 
-          and the Ground Control Software team.
-        </p>
-        <h3>Accomplishments</h3>
-          <ul>
-            <li>
-              Developed firmware for ORCASat radio using C. 
-              Features included new radio commands, message encryption, 
-              and over-the-air firmware updates
-            </li>
-            <li>
-              Performed testing with ORCASat radio and on-board computer 
-              using Python tests and logic analyzer to find and remove 
-              integration bugs
-            </li>
-            <li>
-              Developed Python toolchain for flashing new radio firmware 
-              to improve reliability
-            </li>
-            <li>
-              Developed Python toolchain for flashing new radio firmware 
-              to improve reliability
-            </li>
-            <li>
-              Assisted in development of on-board computer firmware in C 
-              to accommodate new radio commands
-            </li>
-            <li>
-              Assisted in ground control software development using Python 
-              to add features and impove performance
-            </li>
-          </ul>
-        <a href="https://www.orcasat.ca/">ORCASat Website</a>
-      </article>
 
-      <article>
-        <h2>{secondProject}</h2>
-        <p>
-          Open Ocean Robotics develop Uncrewed Surface Vehicles for ocean 
-          monitoring and data collection. As an early hire during the
-          startup phase, I worked on a wide variety of projects, from 
-          software develompemnt to field testing.
-        </p>
-        <h3>Accomplishments</h3>
-          <ul>
-            <li>
-              Adapted Ardupilot open source software for prototype uncrewed 
-              surface vehicle to provide navigation capabilities
-            </li>
-            <li>
-              Implemented UDP video streaming to remotely monitor the USV 
-              over a cellular network
-            </li>
-            <li>
-              Designed a web based dashboard and backend to track and 
-              log USV telemetry
-            </li>
-            <li>
-              Added a satellite backup for the USV telemetry using Iridium
-              satellites and AWS for when the USV is out of cellular range
-            </li>
-          </ul>
-        <a href="https://www.openoceanrobotics.com/">
-          Open Ocean Robotics Website
-        </a>
-      </article>
-    </section>
-  </main>
+<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <div class="max-w-2xl">
+    <article class="prose">
+      <h2 class="text-4xl">Battlesnake</h2>
+      <p>In this game, each Battlesnake is controlled in real-time by a live web server, responding to the Battlesnake API. It navigates the game board based on your algorithm, trying to find food, avoid other Battlesnakes, and survive as long as possible. </p>
+      <p>Our snake is written in Python using the Bottle web framework. It uses an A* pathfinding alogorithm to navigate the board. We placed 3rd in the Stay Home and Code tournament in 2020.</p>
+      <p>Check out the <a href="https://play.battlesnake.com/" class="text-blue-600 hover:underline">official website</a> and our <a href="https://github.com/CyrusSA/jah-snake" class="text-blue-600 hover:underline">GitHub.</a></p>
+      <img src={battlesnake} alt = 'game' class="rounded-lg"/>
+    </article>
+  </div>
+  <div class="max-w-2xl">
+    <article class="prose">
+      <h2 class="text-4xl">Open Ocean Robotics</h2>
+      <p>
+        Open Ocean Robotics develop Uncrewed Surface Vehicles for ocean 
+        monitoring and data collection. As an early hire during the
+        startup phase, I worked on a wide variety of projects, from 
+        software develompemnt to field testing.
+      </p>
+      <p>
+        My main contributions include implementing UDP video streaming
+        over cellular networks, and designing a web app to monitor the 
+        USV telemetry data.
+      </p>
+      <p>
+        Check out the <a href="https://www.openoceanrobotics.com/" class="text-blue-600 hover:underline">official website.</a>
+      </p>
+      <img src={openocean} alt = 'boat' class="rounded-lg"/>
+    </article>
+  </div>
+  <div class="max-w-2xl">
+    <article class="prose">
+      <h2 class="text-4xl">ORCASAT</h2>
+      <p>
+        ORCASAT is a cubesat designed to calibrate telescopes for atmospheric interferance.
+      </p>
+      <p>
+        Launched aboard CRS-26 from Kennedy Space Center to the ISS on Nov. 26, 2022, then deployed to low earth orbit on Dec. 29, 2022. Atmospheric re-entry completed on July 7, 2023.
+      </p>
+      <p>
+        My main role was firmware development for the Telemetry, Tracking, and Command team. Aditionally I worked with the Command and Data Handling team and the Ground Control Software team.
+      </p>
+      <p>
+        Check out the <a href="https://www.orcasat.ca/" class="text-blue-600 hover:underline">official website.</a>
+      </p>
+      <img src={orcasat} alt = 'satellite' class="rounded-lg"/>
+    </article>
+  </div>
+</div>
