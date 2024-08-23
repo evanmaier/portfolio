@@ -5,17 +5,15 @@
 </script>
 
 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-  <div class="max-w-2xl">
-    <article class="prose">
-      <h2 class="text-4xl">Battlesnake</h2>
+  <article class="prose min-w-[400px] p-4">
+      <h2 class="text-4xl min-w">Battlesnake</h2>
       <p>In this game, each Battlesnake is controlled in real-time by a live web server, responding to the Battlesnake API. It navigates the game board based on your algorithm, trying to find food, avoid other Battlesnakes, and survive as long as possible. </p>
       <p>Our snake is written in Python using the Bottle web framework. It uses an A* pathfinding alogorithm to navigate the board. We placed 3rd in the Stay Home and Code tournament in 2020.</p>
       <p>Check out the <a href="https://play.battlesnake.com/" class="text-blue-600 hover:underline">official website</a> and our <a href="https://github.com/CyrusSA/jah-snake" class="text-blue-600 hover:underline">GitHub.</a></p>
       <img src={battlesnake} alt = 'game' class="rounded-lg"/>
-    </article>
-  </div>
-  <div class="max-w-2xl">
-    <article class="prose">
+  </article>
+
+  <article class="prose min-w-[400px] p-4">
       <h2 class="text-4xl">Open Ocean Robotics</h2>
       <p>
         Open Ocean Robotics develop Uncrewed Surface Vehicles for ocean 
@@ -33,9 +31,8 @@
       </p>
       <img src={openocean} alt = 'boat' class="rounded-lg"/>
     </article>
-  </div>
-  <div class="max-w-2xl">
-    <article class="prose">
+
+    <article class="prose min-w-[400px] p-4">
       <h2 class="text-4xl">ORCASAT</h2>
       <p>
         ORCASAT is a cubesat designed to calibrate telescopes for atmospheric interferance.
@@ -51,5 +48,4 @@
       </p>
       <img src={orcasat} alt = 'satellite' class="rounded-lg"/>
     </article>
-  </div>
 </div>

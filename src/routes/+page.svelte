@@ -1,6 +1,12 @@
-<div class="hero bg-base-200 min-h-screen">
+<main>
+  <div class="hero bg-base-200 min-h-screen">
     <div class="hero-content text-center">
       <div class="max-w-md">
+        <div class="avatar">
+          <div class="w-64 rounded-full">
+            <img src="src/lib/assets/profile3.jpg" alt="profile" class="avatar">
+          </div>
+        </div>
         <h1 class="text-5xl font-bold">Hello there</h1>
         <p class="py-6">
           My name is Evan Maier. I'm an Electrical Engineer with a background in software and firmware development.
@@ -11,3 +17,4 @@
       </div>
     </div>
   </div>
+</main>

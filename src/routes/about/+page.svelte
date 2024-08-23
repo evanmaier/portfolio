@@ -1,9 +1,19 @@
-<script>
-    export let title = "About Me";
-  </script>
-  
-  <main>
-    <h1>{title}</h1>
-    <p>Here's a little bit about me...</p>
-    <!-- Add biography, skills, etc. -->
-  </main>
+<main>
+  <div class="flex justify-center items-center min-h-screen">
+      <article class="prose text-center">
+        <h1>About Me</h1>
+        <p>
+          I'm Evan Maier, an electrical engineering graduate from the University of Victoria, now based in Vancouver, BC. My professional experience is in embedded systems and firmware development.
+        </p>
+        <p>
+          My experience includes working on satellite radio firmware at UVic's Center for Aerospace Research and developing software for uncrewed surface vehicles at Open Ocean Robotics. I'm always learning new skills, and have touched everything from devops to frontend development. I enjoy tackling projects that combine hardware and software.
+        </p>
+        <p>
+          When I'm not coding, you'll find me playing soccer, strumming my guitar, or exploring the outdoors. I'm always looking for new challenges in my professional and personal life.
+        </p>
+        <p>
+          Check out my projects to see my work, and feel free to reach out if you want to connect or collaborate.
+        </p>
+      </article>
+    </div>
+</main>
