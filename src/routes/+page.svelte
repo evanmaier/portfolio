@@ -1,6 +1,7 @@
 <script>
   import splashscreen from '$lib/assets/splashscreen2.png';
   import profile from '$lib/assets/profile3.jpg';
+  import resume from '$lib/assets/Resume.webp';
 </script>
 
 <main>
@@ -20,11 +21,7 @@
       <p class="py-6">
         My name is Evan Maier. I'm an Electrical Engineer with a background in software and firmware development.
       </p>
-      <a href="\about" role="button" class="btn btn-primary">About</a>
-      <a href="\projects" role="button" class="btn btn-primary">Projects</a>
-      <a href="\contact" role="button" class="btn btn-primary">Contact</a>
-      <a href="https://github.com/evanmaier" role="button" class="btn btn-primary">Github</a>
-      <a href="https://www.linkedin.com/in/evan-maier-6310b1153/" role="button" class="btn btn-primary">Linkedin</a>
+      <a href={resume} download role="button" class="btn btn-primary">Download Resume</a>
     </div>
   </div>
 </div>
