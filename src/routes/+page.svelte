@@ -1,13 +1,18 @@
+<script>
+  import splashscreen from '$lib/assets/splashscreen2.png';
+  import profile from '$lib/assets/profile3.jpg';
+</script>
+
 <main>
   <div
   class="hero min-h-screen"
-  style="background-image: url('src/lib/assets/splashscreen2.png');">
+  style="background-image: url({splashscreen});">
   <div class="hero-overlay bg-opacity-60"></div>
   <div class="hero-content text-neutral-content text-center">
     <div class="max-w-md">
       <div class="avatar">
         <div class="w-64 rounded-full">
-          <img src="src/lib/assets/profile3.jpg" alt="profile" class="avatar">
+          <img src={profile} alt="profile" class="avatar">
         </div>
       </div>
       <h1 class="text-5xl font-bold">Hello There

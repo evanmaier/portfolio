@@ -1,6 +1,9 @@
-
-    <enhanced:img 
-      src="$lib/assets/Resume.webp" 
-      alt="resume" 
-      class="rounded-xl"
-    />
+<script>
+  import resume from '$lib/assets/Resume.webp';
+</script>
+    
+<enhanced:img 
+  src={resume} 
+  alt="resume" 
+  class="rounded-xl"
+/>

@@ -1,7 +1,7 @@
 <script>
-  let battlesnake = "src/lib/assets/battlesnake.gif";
-  let orcasat = "src/lib/assets/ORCASat-partial-1.jpg";
-  let openocean = "src/lib/assets/openocean.webp";
+  import battlesnake from '$lib/assets/battlesnake.gif';
+  import orcasat from '$lib/assets/ORCASat-partial-1.jpg';
+  import openocean from '$lib/assets/openocean.webp';
 </script>
 
 <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

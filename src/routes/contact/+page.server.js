@@ -1,7 +1,6 @@
 // @ts-nocheck
-import { SENDGRID_API_KEY } from "$env/static/private";
 import sgMail from "@sendgrid/mail";
-sgMail.setApiKey(SENDGRID_API_KEY)
+sgMail.setApiKey('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');
 
 export const actions = {
     default: async ({ request }) => {
