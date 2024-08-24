@@ -4,7 +4,7 @@
   import openocean from '$lib/assets/openocean.webp';
 </script>
 
-<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-10">
   <article class="prose min-w-[400px] p-4">
       <h2 class="text-4xl min-w">Battlesnake</h2>
       <p>In this game, each Battlesnake is controlled in real-time by a live web server, responding to the Battlesnake API. It navigates the game board based on your algorithm, trying to find food, avoid other Battlesnakes, and survive as long as possible. </p>
