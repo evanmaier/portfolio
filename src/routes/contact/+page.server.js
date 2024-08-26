@@ -1,5 +1,5 @@
 // @ts-nocheck
-import nodemailer from 'nodemailer';
+import { MailtrapClient } from 'mailtrap';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -12,32 +12,27 @@ export const actions = {
       const company = formData.get('company');
       const message = formData.get('message');
 
-      // Create a transporter object
-      const transporter = nodemailer.createTransport({
-        host: 'live.smtp.mailtrap.io',
-        port: 587,
-        secure: false, // use SSL
-        auth: {
-          user: process.env.SMTP_USER,
-          pass: process.env.SMTP_PASS,
-        }
-      });
+      const client = new MailtrapClient({ endpoint: process.env.ENDPOINT, token: process.env.TOKEN });
 
-      // Configure the mailoptions object
-      const mailOptions = {
-        from: 'portfolio@demomailtrap.com',
-        to: 'evanm413r@gmail.com',
-        subject: `${name} from ${company} at ${email}`,
-        text: `${message}`
+
+      const sender = {
+        email: "portfolio@demomailtrap.com",
+        name: `${name}`,
       };
 
-      // Send the email
-      transporter.sendMail(mailOptions, function(error, info){
-        if (error) {
-          console.log('Error:', error);
-        } else {
-          console.log('Email sent:', info.response);
+      const recipients = [
+        {
+          email: "evanm413r@gmail.com",
         }
-      });
+      ];
+
+      client
+        .send({
+          from: sender,
+          to: recipients,
+          subject: `${name} from ${company} at ${email}`,
+          text: `${message}`,
+        })
+        .then(console.log, console.error);
     },
   };
