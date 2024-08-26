@@ -1,27 +1,43 @@
 // @ts-nocheck
-import sgMail from "@sendgrid/mail";
-sgMail.setApiKey('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');
+import nodemailer from 'nodemailer';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export const actions = {
     default: async ({ request }) => {
-        const formData = await request.formData();
-        const email = formData.get('email');
-        const name = formData.get('name');
-        const company = formData.get('company');
-        const message = formData.get('message');
-        const msg = {
-            to: 'evanm413r@gmail.com',
-            from: 'evantmaier@gmail.com',
-            subject:`${name} from ${company} at ${email}`,
-            text: `${message}`,
+      // Get form data
+      const formData = await request.formData();
+      const email = formData.get('email');
+      const name = formData.get('name');
+      const company = formData.get('company');
+      const message = formData.get('message');
+
+      // Create a transporter object
+      const transporter = nodemailer.createTransport({
+        host: 'live.smtp.mailtrap.io',
+        port: 587,
+        secure: false, // use SSL
+        auth: {
+          user: process.env.SMTP_USER,
+          pass: process.env.SMTP_PASS,
         }
-        sgMail
-        .send(msg)
-        .then(() => {
-          console.log('Email sent')
-        })
-        .catch((error) => {
-          console.error(error)
-        })
+      });
+
+      // Configure the mailoptions object
+      const mailOptions = {
+        from: 'portfolio@demomailtrap.com',
+        to: 'evanm413r@gmail.com',
+        subject: `${name} from ${company} at ${email}`,
+        text: `${message}`
+      };
+
+      // Send the email
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+          console.log('Error:', error);
+        } else {
+          console.log('Email sent:', info.response);
+        }
+      });
     },
   };
