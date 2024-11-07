@@ -2,8 +2,8 @@
     import "../app.css";
 </script>
 
-<nav class="bg-transparent backdrop-blur-sm shadow-lg fixed top-0 left-0 w-full p-3">
-    <div class="flex items-center justify-center space-x-4">
+<nav class="navbar bg-base-100">
+    <div class="flex mx-auto space-x-4">
         <a href="/" class="flex items-center text-white">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -19,11 +19,12 @@
             </svg>
         </a>
         <a href="/about" role="button" class="font-semibold text-lg">About</a>
+        <a href="/experience" role="button" class="font-semibold text-lg">Experience</a>
         <a href="/projects" role="button" class="font-semibold text-lg">Projects</a>
         <a href="/contact" role="button" class="font-semibold text-lg">Contact</a>
-        <a href="https://github.com/evanmaier" role="button" class="font-semibold text-lg">Github</a>
-        <a href="https://www.linkedin.com/in/evan-maier-6310b1153/" role="button" class="font-semibold text-lg">Linkedin</a>
     </div>
 </nav>
 
-<slot />
+<main class="h-[95vh]">
+    <slot />
+</main>

@@ -1,9 +1,8 @@
-<main>
-  <div class="flex justify-center items-center min-h-screen">
+  <div class="flex justify-center items-center min-h-screen p-2">
       <article class="prose text-center">
-        <h1>About Me</h1>
+        <h2>About Me</h2>
         <p>
-          I'm Evan Maier, an electrical engineering graduate from the University of Victoria, now based in Vancouver, BC. My professional experience is in embedded systems and firmware development.
+          I'm an electrical engineering graduate from the University of Victoria, now based in Vancouver, BC. My professional experience is in embedded systems and firmware development.
         </p>
         <p>
           My experience includes working on satellite radio firmware at UVic's Center for Aerospace Research and developing software for uncrewed surface vehicles at Open Ocean Robotics. I'm always learning new skills, and have touched everything from devops to frontend development. I enjoy tackling projects that combine hardware and software.
@@ -16,4 +15,3 @@
         </p>
       </article>
     </div>
-</main>
