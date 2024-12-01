@@ -1,4 +1,4 @@
-<div class="flex justify-center p-2">
+<div class="flex min-h-[calc(100vh-4rem)] justify-center items-center p-2">
 	<div class="w-full max-w-sm text-center">
 		<h2 class="text-2xl font-bold mb-6">Contact</h2>
 		<form method="POST" class="flex flex-col gap-4">
