@@ -1,13 +1,12 @@
 <script>
     import orcasat from '$lib/assets/ORCASat-partial-1.jpg';
-    import openocean from '$lib/assets/openocean.webp';
+    import dataXplorer from '$lib/assets/dataXplorer.png';
   </script>
 
 
-<div class="flex flex-col md:flex-row justify-center">
+<div class="flex flex-col justify-center items-center">
   <article class="prose p-4">
       <h2 class="text-center">Open Ocean Robotics</h2>
-      <img src={openocean} alt = 'boat' class="rounded-lg aspect-square object-cover max-w-xs mx-auto"/>
       <p>
         Open Ocean Robotics develop Uncrewed Surface Vehicles for ocean 
         monitoring and data collection. As an early hire during the
@@ -19,14 +18,14 @@
         over cellular networks, and designing a web app to monitor the 
         USV telemetry data.
       </p>
-      <p>
-        Check out the <a href="https://www.openoceanrobotics.com/" class="text-blue-600 hover:underline">official website.</a>
-      </p>
+      <figure>
+        <img src={dataXplorer} alt = 'boat' class="rounded-lg object-cover"/>
+        <figcaption>DataXplorer</figcaption>
+      </figure>
     </article>
 
     <article class="prose p-4">
       <h2 class="text-center">ORCASAT</h2>
-      <img src={orcasat} alt = 'satellite' class="rounded-lg aspect-square object-cover max-w-xs mx-auto"/>
       <p>
         ORCASAT is a cubesat designed to calibrate telescopes for atmospheric interferance.
       </p>
@@ -36,9 +35,12 @@
       <p>
         My main role was firmware development for the Telemetry, Tracking, and Command team. Aditionally I worked with the Command and Data Handling team and the Ground Control Software team.
       </p>
-      <p>
-        Check out the <a href="https://www.orcasat.ca/" class="text-blue-600 hover:underline">official website.</a>
-      </p>
+      <figure>
+        <figcaption>
+          <img src={orcasat} alt = 'satellite' class="rounded-lg object-cover"/>
+          The satellite without solar pannels
+        </figcaption>
+      </figure>
   </article>
 </div>
 
