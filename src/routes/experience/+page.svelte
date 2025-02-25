@@ -11,7 +11,7 @@
         Open Ocean Robotics develop Uncrewed Surface Vehicles for ocean 
         monitoring and data collection. As an early hire during the
         startup phase, I worked on a wide variety of projects, from 
-        software develompemnt to field testing.
+        software develompent to field testing.
       </p>
       <p>
         My main contributions include implementing UDP video streaming

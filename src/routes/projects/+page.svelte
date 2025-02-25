@@ -14,19 +14,19 @@
       <h2 class="text-center">Guitar Tuner</h2>
       <p>
         I have always wanted to build a guitar pedal, as it combines my interest in music and engineering.
-        I chose to build a chromatic tuner because it poses interesting hardware and software design problems.
         After months of design, testing, and iteration I am quite pleased with the final result.
       </p>
-      
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/g4U_7SbJp7o"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+
+      <div class="relative w-full h-0 pb-[56.25%]">
+        <iframe
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/g4U_7SbJp7o"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
 
       <p>
         The pedal is powered by either a 9V battery or 9V DC power supply, and drives a 1.8" TFT display.
@@ -75,7 +75,11 @@
         TuneLink is a sharing economy platform for music gear. The goal is to connect
         local musicians looking to rent and lend instruments and other music equiptment.
         It also serves as a platform for local buisinesses to advertise rentals and manage
-        inventory. The core web app was built by me over a two month span in Sept-Oct of 2024.
+        inventory.
+      </p>
+
+      <p>
+        The core web app was built by me over a two month span in Sept-Oct of 2024.
         This is a full stack application built with Sveltekit with TypeScript and Firebase.
       </p>
 
