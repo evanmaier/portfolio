@@ -9,11 +9,7 @@
 
     <nav class="navbar bg-transparent">
         <div class="flex mx-auto space-x-4">
-            <a href="/" role="button" class="font-semibold text-lg">Home</a>
-            <a href="/about" role="button" class="font-semibold text-lg">About</a>
-            <a href="/experience" role="button" class="font-semibold text-lg">Experience</a>
-            <a href="/projects" role="button" class="font-semibold text-lg">Projects</a>
-            <a href="/contact" role="button" class="font-semibold text-lg">Contact</a>
+            <a href="/" role="button" class="font-semibold text-lg md:text-2xl">Home</a>
         </div>
     </nav>
 

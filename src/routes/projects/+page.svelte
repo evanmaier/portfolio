@@ -14,7 +14,7 @@
       <h2 class="text-center">Guitar Tuner</h2>
       <p>
         I have always wanted to build a guitar pedal, as it combines my interest in music and engineering.
-        After months of design, testing, and iteration I am quite pleased with the final result.
+        After months of design, testing, and iteration I am proud of the final result.
       </p>
 
       <div class="relative w-full h-0 pb-[56.25%]">
